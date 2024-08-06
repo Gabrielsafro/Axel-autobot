@@ -24,7 +24,7 @@ module.exports.run = async function({
   try {
     const {
       data
-    } = await axios.get(`https://api.kenliejugarap.com/freegpt4o8k/?context=${encodeURIComponent(input)}`);
+    } = await axios.get(`https://ai-chat-gpt-4-lite.onrender.com/api/hercai/?context=${encodeURIComponent(input)}`);
     const response = data.response;
     api.sendMessage('℘༒𝗔𝗫𝗘𝗟-𝗖𝗢𝗣𝗜𝗟𝗢𝗧༒℘:\n━━━━━━━━━━━\n\n' + response + \n'━━━━━━━━━━━', event.threadID, event.messageID);
   } catch (error) {
