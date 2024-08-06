@@ -7,7 +7,7 @@ module.exports.config = {
   aliases: ['gpt', 'openai'],
   description: "An AI command powered by GPT-4",
   usage: "Ai [promot]",
-  credits: 'Megan',
+  credits: 'gab',
   cooldown: 3,
 };
 module.exports.run = async function({
@@ -24,9 +24,9 @@ module.exports.run = async function({
   try {
     const {
       data
-    } = await axios.get(`https://jonellccprojectapis10.adaptable.app/api/gpt4o?context=${encodeURIComponent(input)}`);
+    } = await axios.get(`https://api.kenliejugarap.com/freegpt4o8k/?context=${encodeURIComponent(input)}`);
     const response = data.response;
-    api.sendMessage('℘༒𝗔𝗫𝗘𝗟-𝗖𝗢𝗣𝗜𝗟𝗢𝗧༒℘:\n━━━━━━━━━━━\n\n' + response + '━━━━━━━━━━━', event.threadID, event.messageID);
+    api.sendMessage('℘༒𝗔𝗫𝗘𝗟-𝗖𝗢𝗣𝗜𝗟𝗢𝗧༒℘:\n━━━━━━━━━━━\n\n' + response + \n'━━━━━━━━━━━', event.threadID, event.messageID);
   } catch (error) {
     api.sendMessage('An error occurred while processing your request.', event.threadID, event.messageID);
   }
