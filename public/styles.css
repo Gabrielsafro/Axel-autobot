@@ -1,6 +1,6 @@
 body {
 		 padding: 20px;
-		 background-image: url("https://i.ibb.co/R27xWLf/image.jpg");
+		 background: linear-gradient(160deg, #3a0383, #0c062a, #0c062a);
 		 background-size: cover;
 		 font-family: 'Poppins', sans-serif;
 	   border-radius: 10px;
@@ -9,7 +9,7 @@ body {
 	   color: #FFFF;
 	   background: transparent;
 	   backdrop-filter: blur(10px);
-		 border-radius: 10px;
+		 border-radius: 20px;
 		 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		 padding: 20px;
 		 margin-top: 20px;
